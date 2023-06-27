@@ -1,0 +1,127 @@
+proxies:
+- name: danu05_AkrabDO01a
+  type: trojan
+  server: 104.18.1.196
+  port: 443
+  password: c309e5ea-3c6a-48ee-9462-dd16d55ae44e
+  udp: true
+  sni: do2.myserver-prem.cloud
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/trojanws"
+    headers:
+      Host: do2.myserver-prem.cloud
+  interface-name: eth1
+- name: danu05_AkrabDO01b
+  type: trojan
+  server: cdn.noice.id
+  port: 443
+  password: c309e5ea-3c6a-48ee-9462-dd16d55ae44e
+  udp: true
+  sni: do2.myserver-prem.cloud
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/trojanws"
+    headers:
+      Host: do2.myserver-prem.cloud
+  interface-name: eth1
+- name: danu05_AkrabDO01c
+  type: trojan
+  server: 104.20.75.141
+  port: 443
+  password: c309e5ea-3c6a-48ee-9462-dd16d55ae44e
+  udp: true
+  sni: do2.myserver-prem.cloud
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/trojanws"
+    headers:
+      Host: do2.myserver-prem.cloud
+  interface-name: eth1
+- name: danu03_AkrabDO03
+  type: trojan
+  server: 104.18.1.196
+  port: 443
+  password: e4b00613-d17c-47f9-ada4-3a1292c2744e
+  udp: true
+  sni: do2.myserver-prem.cloud
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: do2.myserver-prem.cloud
+  interface-name: eth1
+- name: TJ-WS01
+  type: trojan
+  server: 104.21.8.121
+  port: 443
+  password: 6c198610-bd57-11ed-a3f8-1239d0255272
+  network: ws
+  sni: sg3-trojan.bonds.id
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: "/howdy"
+    headers:
+      Host: sg3-trojan.bonds.id
+  interface-name: eth1
+- name: danu01_LiveDO01a
+  type: trojan
+  server: 104.21.8.121
+  port: 443
+  password: 63d17542-dee3-47a8-9639-0d34d9ef8d87
+  udp: true
+  sni: do2.myserver-prem.cloud
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: do2.myserver-prem.cloud
+  interface-name: eth2
+- name: danu01_LiveDO01b
+  type: trojan
+  server: 172.67.139.111
+  port: 443
+  password: 63d17542-dee3-47a8-9639-0d34d9ef8d87
+  udp: true
+  sni: do2.myserver-prem.cloud
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: do2.myserver-prem.cloud
+  interface-name: eth2
+- name: danu01_LiveDO01c
+  type: trojan
+  server: beacon.liveon.id
+  port: 443
+  password: 63d17542-dee3-47a8-9639-0d34d9ef8d87
+  udp: true
+  sni: do2.myserver-prem.cloud
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: do2.myserver-prem.cloud
+  interface-name: eth2
+- name: TJ-WS02
+  type: trojan
+  server: 104.21.8.121
+  port: 443
+  password: 7e961210-bd57-11ed-b009-1239d0255272
+  network: ws
+  sni: sg2-trojan.bonds.id
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: "/howdy"
+    headers:
+      Host: sg2-trojan.bonds.id
+  interface-name: eth2

@@ -1,5 +1,5 @@
 proxies:
-- name: Danu21_AkrabDO01a
+- name: Danu21_AkrabMlbi01a
   type: trojan
   server: 104.18.1.196
   port: 443
@@ -13,7 +13,7 @@ proxies:
     headers:
       Host: melbi2.myserver-prem.cloud
   interface-name: eth1
-- name: Danu21_AkrabDO01b
+- name: Danu21_AkrabMlbi01b
   type: trojan
   server: cdn.noice.id
   port: 443
@@ -27,7 +27,7 @@ proxies:
     headers:
       Host: melbi2.myserver-prem.cloud
   interface-name: eth1
-- name: Danu21_AkrabDO01c
+- name: Danu21_AkrabMlbi01c
   type: trojan
   server: 104.20.75.141
   port: 443
@@ -111,7 +111,7 @@ proxies:
     headers:
       Host: sg3-trojan.bonds.id
   interface-name: eth1
-- name: Danu23_LiveDO01a
+- name: Danu23_LiveMlbi01a
   type: trojan
   server: 104.21.8.121
   port: 443
@@ -125,7 +125,7 @@ proxies:
     headers:
       Host: melbi2.myserver-prem.cloud
   interface-name: eth2
-- name: Danu23_LiveDO01b
+- name: Danu23_LiveMlbi01b
   type: trojan
   server: 172.67.139.111
   port: 443
@@ -139,7 +139,7 @@ proxies:
     headers:
       Host: melbi2.myserver-prem.cloud
   interface-name: eth2
-- name: Danu23_LiveDO01c
+- name: Danu23_LiveMlbi01c
   type: trojan
   server: beacon.liveon.id
   port: 443

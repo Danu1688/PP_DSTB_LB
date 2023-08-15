@@ -97,3 +97,47 @@ proxies:
     headers:
       Host: melbi3.myserver-prem.cloud
   interface-name: eth1
+- name: DanuMelbi01_Live01_1
+  type: trojan
+  server: 104.21.8.121
+  port: 443
+  password: ca08c6d4-9fa5-48d1-83d8-41ff78b39e6f
+  udp: true
+  sni: melbi3.myserver-prem.cloud
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: melbi3.myserver-prem.cloud
+  interface-name: wwan0
+- name: DanuMelbi01_Live01_2
+  type: trojan
+  server: 172.67.139.111
+  port: 443
+  password: ca08c6d4-9fa5-48d1-83d8-41ff78b39e6f
+  udp: true
+  sni: melbi3.myserver-prem.cloud
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: melbi3.myserver-prem.cloud
+  interface-name: wwan0
+- name: DanuMelbi01_Live01_3
+  type: trojan
+  server: beacon.liveon.id
+  port: 443
+  password: ca08c6d4-9fa5-48d1-83d8-41ff78b39e6f
+  udp: true
+  sni: melbi3.myserver-prem.cloud
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: melbi3.myserver-prem.cloud
+  interface-name: wwan0
+
+  

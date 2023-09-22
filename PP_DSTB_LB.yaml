@@ -125,33 +125,109 @@ proxies:
     headers:
       Host: sgdo2.myserver-prem.xyz
   interface-name: eth1
-- name: DanuMelbi01_Live01_1
+- name: DanuNusa_LiveNusa_1
   type: trojan
-  server: 104.21.8.121
+  server: beacon.liveon.id
   port: 443
-  password: ca08c6d4-9fa5-48d1-83d8-41ff78b39e6f
+  password: 55349efa-6b40-4225-9158-946a3e3e07eb
   udp: true
-  sni: melbi3.myserver-prem.cloud
+  sni: vpna4mvbhv.scpotato.me
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /trojan
     headers:
-      Host: melbi3.myserver-prem.cloud
+      Host: vpna4mvbhv.scpotato.me
   interface-name: wwan0
-- name: DanuMelbi01_Live01_2
+- name: DanuRmWeb_LiveRmWeb_1
   type: trojan
-  server: 172.67.139.111
+  server: beacon.liveon.id
   port: 443
-  password: ca08c6d4-9fa5-48d1-83d8-41ff78b39e6f
+  password: f249583f-004c-4ef0-a2b1-e16e2e286d57
   udp: true
-  sni: melbi3.myserver-prem.cloud
+  sni: vpnrdfs1ov.scpotato.me
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /trojan
     headers:
-      Host: melbi3.myserver-prem.cloud
+      Host: vpnrdfs1ov.scpotato.me
+  interface-name: wwan0
+- name: DanuBiznet_LiveBiznet_1
+  type: trojan
+  server: beacon.liveon.id
+  port: 443
+  password: 4c30305c-4da0-4ca7-96e3-88bd26a5c7b9
+  udp: true
+  sni: vpn46tnyyt.scpotato.me
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: vpn46tnyyt.scpotato.me
+  interface-name: wwan0
+- name: DstbBackupSvr01_LiveDO_1
+  type: trojan
+  server: beacon.liveon.id
+  port: 443
+  password: ac6e2219-e937-4f78-b836-a92f1efc6a3b
+  udp: true
+  sni: danu529.foryou-ssh.my.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan-ws
+    headers:
+      Host: danu529.foryou-ssh.my.id
+  interface-name: wwan0
+- name: DanuVmessTLS-LIVE-DO_1
+  type: vmess
+  server: circles.asia
+  port: 443
+  uuid: 69567ec0-de1d-4f9f-9332-8505c5c1bdfb
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: danu529.foryou-ssh.my.id
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: danu529.foryou-ssh.my.id
+  interface-name: wwan0
+- name: DanuVmessNTLS-LIVE-DO_1
+  type: vmess
+  server: circles.asia
+  port: 80
+  uuid: 69567ec0-de1d-4f9f-9332-8505c5c1bdfb
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: false
+  servername: danu529.foryou-ssh.my.id
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: danu529.foryou-ssh.my.id
+  interface-name: wwan0
+- name: DanuDstbSvr2_LiveDO_2
+  type: trojan
+  server: beacon.liveon.id
+  port: 443
+  password: 7c41ae50-1182-4181-bf5c-097b92a37437
+  udp: true
+  sni: sgdo2.myserver-prem.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /xraytrojanws
+    headers:
+      Host: sgdo2.myserver-prem.xyz
   interface-name: wwan0
 - name: DanuMelbi01_Live01_3
   type: trojan
@@ -167,5 +243,314 @@ proxies:
     headers:
       Host: melbi3.myserver-prem.cloud
   interface-name: wwan0
-
-  
+- name: DanuBackup_LiveDO_3
+  type: trojan
+  server: beacon.liveon.id
+  port: 443
+  password: 39ca4c74-9abd-4c33-9e11-b779fea93c50
+  udp: true
+  sni: do-2device.myserver-prem.cloud
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: do-2device.myserver-prem.cloud
+  interface-name: wwan0
+- name: DanuMelbi01_Live01BU
+  type: trojan
+  server: circles.asia
+  port: 443
+  password: ca08c6d4-9fa5-48d1-83d8-41ff78b39e6f
+  udp: true
+  sni: melbi3.myserver-prem.cloud
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: melbi3.myserver-prem.cloud
+  interface-name: wwan0
+- name: DanuMelbi03_Live03BU
+  type: trojan
+  server: circles.asia
+  port: 443
+  password: ab5fc132-9899-4991-96e3-76438a474509
+  udp: true
+  sni: melbi3.myserver-prem.cloud
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: melbi3.myserver-prem.cloud
+  interface-name: wwan0
+- name: Danu29_LiveBiznetBU
+  type: trojan
+  server: circles.asia
+  port: 443
+  password: fa574d6f-bc4d-41c4-a960-348e15888809
+  udp: true
+  sni: biznet2.myserver-prem.cloud
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: biznet2.myserver-prem.cloud
+  interface-name: wwan0
+- name: DanuMelbi31_Live31BU
+  type: trojan
+  server: circles.asia
+  port: 443
+  password: 277c5b6d-1184-4987-ae41-06291ac30975
+  udp: true
+  sni: melbi3.myserver-prem.cloud
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: melbi3.myserver-prem.cloud
+  interface-name: wwan0
+- name: Danu31_LiveNusaBU
+  type: trojan
+  server: circles.asia
+  port: 443
+  password: 686cda5b-9f7c-4580-917a-0a6af5a49308
+  udp: true
+  sni: nusa1.myserver-prem.cloud
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: nusa1.myserver-prem.cloud
+  interface-name: wwan0
+- name: DanuMelbi33_Live33BU
+  type: trojan
+  server: circles.asia
+  port: 443
+  password: da832c46-6991-478d-ab40-cb321881defc
+  udp: true
+  sni: melbi3.myserver-prem.cloud
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: melbi3.myserver-prem.cloud
+  interface-name: wwan0
+- name: Danu35_LiveNusaBU
+  type: trojan
+  server: circles.asia
+  port: 443
+  password: 8e5aa4f5-331f-41c7-869e-b758be486081
+  udp: true
+  sni: nusa1.myserver-prem.cloud
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: nusa1.myserver-prem.cloud
+  interface-name: wwan0
+- name: Danu37_LiveBiznetBU
+  type: trojan
+  server: circles.asia
+  port: 443
+  password: 881f183c-d751-4c8c-9f5b-3f01d586197b
+  udp: true
+  sni: biznet2.myserver-prem.cloud
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: biznet2.myserver-prem.cloud
+  interface-name: wwan0
+- name: danuAryo21_LiveDo21BU
+  type: trojan
+  server: circles.asia
+  port: 443
+  password: 7c5f4e2b-91dd-4366-938c-b3159ab8ec5d
+  udp: true
+  sni: do.sshpremium.my.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/trojanws"
+    headers:
+      Host: do.sshpremium.my.id
+  interface-name: wwan0
+- name: danuAryo23_LiveDo23BU
+  type: trojan
+  server: circles.asia
+  port: 443
+  password: d9f12312-fcf2-4042-9bce-5f9cb395c062
+  udp: true
+  sni: do.sshpremium.my.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/trojanws"
+    headers:
+      Host: do.sshpremium.my.id
+  interface-name: wwan0
+- name: danuAryo25_LiveDo25BU
+  type: trojan
+  server: circles.asia
+  port: 443
+  password: 0652b917-f0ed-41c4-ac9c-8c1cadd6dca2
+  udp: true
+  sni: do.sshpremium.my.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/trojanws"
+    headers:
+      Host: do.sshpremium.my.id
+  interface-name: wwan0
+- name: TrojanTestSgDo2-Live
+  type: trojan
+  server: circles.asia
+  port: 443
+  password: e6854375-9705-41fb-9b2a-b4ca690175dc
+  udp: true
+  sni: danu529.foryou-ssh.my.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan-ws
+    headers:
+      Host: danu529.foryou-ssh.my.id
+  interface-name: wwan0
+- name: TrojanTestSgDo2B-Live
+  type: trojan
+  server: circles.asia
+  port: 443
+  password: b4be353d-7f18-4b24-9d11-4a5b4c0969a0
+  udp: true
+  sni: sgdo2.myserver-prem.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /xraytrojanws
+    headers:
+      Host: sgdo2.myserver-prem.xyz
+  interface-name: wwan0
+- name: TrojanGoTest-Live_1
+  server: circles.asia
+  port: 8443
+  type: trojan
+  password: TrojanGoTest
+  network: ws
+  sni: sgdo3.dstb.cloud
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /trojan-go
+    headers:
+        Host: sgdo3.dstb.cloud
+  interface-name: wwan0
+- name: TrojanWsSvr-Live_1
+  type: trojan
+  server: circles.asia
+  port: 443
+  password: 9766b64f-2d18-464b-8be5-02231f0e0c44
+  udp: true
+  sni: sgdo3.dstb.cloud
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan-ws
+    headers:
+      Host: sgdo3.dstb.cloud
+  interface-name: wwan0
+- name: DSTB1Test_LiveDO_1
+  type: trojan
+  server: circles.asia
+  port: 443
+  password: 6640d3d3-65a8-40a3-a749-ddb8768c200c
+  udp: true
+  sni: sgdo2.myserver-prem.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /xraytrojanws
+    headers:
+      Host: sgdo2.myserver-prem.xyz
+  interface-name: wwan0
+- name: GatotDua_LiveDO_1
+  type: trojan
+  server: circles.asia
+  port: 443
+  password: b02e7d49-0840-44bb-9f4a-2d658df3f480
+  udp: true
+  sni: sgdo2.myserver-prem.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /xraytrojanws
+    headers:
+      Host: sgdo2.myserver-prem.xyz
+  interface-name: wwan0
+- name: WilaLaviana_LiveDO_1
+  type: trojan
+  server: circles.asia
+  port: 443
+  password: a143b94c-bd31-4755-a207-0422c5f6d177
+  udp: true
+  sni: sgdo2.myserver-prem.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /xraytrojanws
+    headers:
+      Host: sgdo2.myserver-prem.xyz
+  interface-name: wwan0
+- name: DSTB2Test_LiveDO_1
+  type: trojan
+  server: circles.asia
+  port: 443
+  password: 6eaad185-5479-43dc-819e-3c2ef4d30dcd
+  udp: true
+  sni: sgdo2.myserver-prem.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /xraytrojanws
+    headers:
+      Host: sgdo2.myserver-prem.xyz
+  interface-name: wwan0
+- name: DSTB3Vmess_LiveDO_1
+  type: vmess
+  server: circles.asia
+  port: 443
+  uuid: bc232c66-1f73-4732-b258-4652f137f0b0
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sgdo2.myserver-prem.xyz
+  network: ws
+  ws-opts:
+    path: /xrayvws
+    headers:
+      Host: sgdo2.myserver-prem.xyz
+  interface-name: wwan0
+- name: DSTB4Trojan_LiveDO_1
+  type: trojan
+  server: circles.asia
+  port: 443
+  password: f6d13644-4290-44f8-9139-3a9d7e2e5af3
+  udp: true
+  sni: sgdo2.myserver-prem.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /xraytrojanws
+    headers:
+      Host: sgdo2.myserver-prem.xyz
+  interface-name: wwan0
